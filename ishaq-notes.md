@@ -42,3 +42,7 @@ const length = foo.len;
     const c = a ++ b ++ [_]u8{ 5 }; // equals 1 2 3 4 5
 ```
 - note: zig only operates on your array when your code is being compiled (comptime)
+
+### Exercise 6 - Strings
+- zig stores strings as an array of bytes
+- much like c, single chars are wrapped with `''` and quotes are wrapped with `""`

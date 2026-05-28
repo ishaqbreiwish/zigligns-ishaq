@@ -25,3 +25,20 @@ var foo: [3]u32 = [3]u32{ 42, 108, 5423 };
 var foo: [_]u32{42, 108, 5423};
 ```
 - we can get values using index notation
+```zig
+const bar = foo[2];
+```
+- we can get length using len
+```zig
+const length = foo.len;
+```
+
+### Exercise 5 - Arrays 2
+- zig only has one array operator
+- you can use ++ to concatenate two arrays
+```zig
+    const a = [_]u8{ 1,2 };
+    const b = [_]u8{ 3,4 };
+    const c = a ++ b ++ [_]u8{ 5 }; // equals 1 2 3 4 5
+```
+- note: zig only operates on your array when your code is being compiled (comptime)

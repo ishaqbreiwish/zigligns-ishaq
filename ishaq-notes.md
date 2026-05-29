@@ -87,3 +87,8 @@ const two_lines =
 ```zig
  const foo: u8 = if (a) 2 else 3;
 ```
+
+### Exercise 11-14 - While
+
+- Again, nothing super special here, but condition does need to be a boolean like w/ if
+-

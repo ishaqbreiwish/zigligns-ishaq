@@ -91,4 +91,11 @@ const two_lines =
 ### Exercise 11-14 - While
 
 - Again, nothing super special here, but condition does need to be a boolean like w/ if
--
+- while loops do have some interesitng additions, like a `continue` expression, which runs every time th eloop continues (either at the en of the loop or when an explicit `continue` is invoked)
+
+```zig
+ var foo = 2;
+while (foo < 10) : (foo += 2) {
+    // blah blah
+}
+```

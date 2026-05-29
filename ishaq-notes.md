@@ -99,3 +99,36 @@ while (foo < 10) : (foo += 2) {
     // blah blah
 }
 ```
+
+- you can force a loop to terminate w/ `break`
+  - when a loop stops because of a break, continue expressions do not execute
+
+### Exercise 15-16 - For
+
+- again, nothing out of the ordinary
+
+```zig
+// syntax
+for (items) |item| {
+// Do something with item
+}
+```
+
+- For loops also let you use the "index" of the iteration
+
+```zig
+for (items, 0..) |item, index| {
+// Do something with item and index
+}
+```
+
+### Exercise 17-18 - Functions
+
+- return type goes after the parameters
+-
+
+```zig
+ fn foo(n: u8) u8 {
+return n + 1;
+}
+```

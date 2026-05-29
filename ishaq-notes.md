@@ -73,3 +73,17 @@ const two_lines =
          \\Line Two
      ;
 ```
+
+### Exercise 9 - if
+
+- basically normal lol
+- most special thing is that it **only** accepts boolean values
+- It won't coerce numbers or other types of data to true and false
+
+### Exercise 10 - if2
+
+- if statements can be valid statements
+
+```zig
+ const foo: u8 = if (a) 2 else 3;
+```
